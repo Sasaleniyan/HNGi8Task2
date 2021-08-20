@@ -1,4 +1,6 @@
-
+For more information on the Internship, Please Visit:
+https://internship.zuri.team/
+https://hng.tech/
 
 
 https://user-images.githubusercontent.com/39458005/130194781-e3a442cd-f339-4264-ae25-195f6736d5a9.mp4
