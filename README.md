@@ -1,5 +1,8 @@
 For more information on the Internship, Please Visit:
 https://internship.zuri.team/
+
+or
+
 https://hng.tech/
 
 
