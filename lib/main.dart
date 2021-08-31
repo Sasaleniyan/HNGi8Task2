@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.lightBlueAccent[100],
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Center(child: Text('My Profiler HNGi8')),
       ),
@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: TextFormField(
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 20.0,
                 ),
                 controller: myController,

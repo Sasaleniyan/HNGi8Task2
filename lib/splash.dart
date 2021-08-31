@@ -14,16 +14,16 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   var splashText = 'A Space to bring out the Best in You!';
 
-
   @override
-  void  initState() {
+  void initState() {
     super.initState();
     __navigateToHome();
   }
-  __navigateToHome()async{
-    await Future.delayed(Duration(milliseconds: 1800), () {
-    });
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyHomePage()));
+
+  __navigateToHome() async {
+    await Future.delayed(Duration(milliseconds: 2000), () {});
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => MyHomePage()));
   }
 
   @override
@@ -34,24 +34,28 @@ class _SplashState extends State<Splash> {
         children: <Widget>[
           Center(
             child: Container(
-              child: Text('Welcome to HNGi8 ',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                fontSize: 24,
-                color: Colors.blue[900]
-              ),),
+              child: Text(
+                'Welcome to HNGi8 ',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    color: Colors.blue[900]),
+              ),
             ),
           ),
-          Text('$splashText',
-          style: TextStyle(
-            fontSize: 16.0,
-            fontFamily: 'Pacifico',
-            color: Colors.blue,
-            fontWeight: FontWeight.lerp(FontWeight.w100, FontWeight.w500, 10.0)
-          ),),
+          Text(
+            '$splashText',
+            style: TextStyle(
+                fontSize: 16.0,
+                fontFamily: 'Pacifico',
+                color: Colors.blue,
+                fontWeight:
+                    FontWeight.lerp(FontWeight.w100, FontWeight.w500, 10.0)),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Image.asset('images/splash_screen.png',
+            child: Image.asset(
+              'images/splash_screen.png',
               height: 100.0,
               width: 600.0,
             ),
